@@ -1,0 +1,91 @@
+body { 
+	background: url('../pictures/background1.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+div.container-fluid{
+	font-family:'Coustard',sans-serif;
+	line-height:1.5em;
+}
+
+.sidebar-nav-fixed {
+   
+}
+
+div.span3 {
+	padding-top:40px;
+}
+h2 {
+	color: #333;
+	font-size:24px;
+	text-shadow: -5px 5px 5px rgba(0,0,0, 0.3);
+	letter-spacing: 0;
+	padding-bottom:30px;
+}
+
+p {
+	word-spacing: 2px;
+}
+ul {
+	list-style:none;
+}
+
+div.navbar-inner {
+	padding-right:30px;
+}
+
+
+ul.nav.nav-list.links li a {
+	/*line-height:80px;*/
+	text-transform: uppercase;
+	padding:30px;
+
+
+}
+a.brand.samclark{
+	font-size:24px;
+	}
+div.navbar-inner a {
+	color:blue;
+}
+ul.nav.nav-list.links li a img {
+	margin-right:5px;
+}
+ul.nav.nav-list.contact {
+	text-align:center;
+}
+ul.nav.nav-list.contact li a {
+	/*line-height:80px;*/
+	display:inline;
+
+}
+
+ul.nav.nav-list.contact li a img {
+	padding-right:15px;
+	padding-top:5px;
+}
+
+
+
+ul.nav.nav-list.links li a:hover{
+	background:#468DF8;
+}
+div.well.sidebar-nav{
+	height:100%;
+}
+.hero-unit {
+	text-align:center;
+
+}
+
+
+
+canvas {width:100%; height:100%;}
+
+.interest_list li {
+	display:inline;
+}

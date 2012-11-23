@@ -1,0 +1,26 @@
+<!-- Drawing.html base page all HTML5 canvas work inherits from here -->
+{% extends "base.html" %}
+	{% block side_bar %}
+	
+		 <li class="nav-header">canvas drawings</li>
+          <li><a href="/drawings/trees"><img src="{{STATIC_URL}}icons/forrest.png"><span class="label"> recursive trees</span></a></li>
+         <li><a href="/drawings/snowflakes"><img src="{{STATIC_URL}}icons/snowflake.png"><span class="label"> koche snowflake</span></a></li>
+	
+	{% endblock %}
+					
+	{% block content_area %}
+			<div class ="drawing_header">
+				<h2> Drawings done useing javascript and HTML5 canvas </h2>
+			</div>
+			<div class="drawing_content">
+				<p> I liked nature and drawing with code. Trees and snowflakes are two objects
+					that can be drawn via recursion and randomization. I hope to slowly expand this list and integrate them together at some point. 
+				</p>
+
+			</div>
+	{% endblock %}
+
+
+
+	
+	

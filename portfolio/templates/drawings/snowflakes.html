@@ -1,0 +1,36 @@
+{% extends "drawings.html" %}
+
+{% block content_area %}
+		
+			<canvas class="snowflake_drawing_canvas" width="1800" height="1200"></canvas>
+
+
+<script type="text/javascript">
+	var canvas = $('.snowflake_drawing_canvas')[0];
+	if (canvas.getContext) {
+		var context = canvas.getContext('2d');
+	}
+
+
+	function draw_snowflake (width,height,levels,num_sides,length,color){
+		koch_snowflake.init(canvas,color,width,height);
+		koch_snowflake.begin_path();
+		koch_snowflake.snow_flake(num_sides,length,levels);
+		koch_snowflake.finish();
+
+	}
+	
+	draw_snowflake(canvas.width*.75, canvas.height*.75,4,6,200,"red");
+	draw_snowflake(canvas.width*.5, canvas.height*.5,4,7,100,"blue");
+	draw_snowflake(canvas.width*.25, canvas.height*.25,3,5,180,"gold");
+	draw_snowflake(canvas.width*.25, canvas.height*.75,4,5,200,"teal");
+	draw_snowflake(canvas.width*.75, canvas.height*.25,3,4,200,"skyblue");
+	
+
+		
+</script>
+
+	
+{% endblock %}
+
+WHAT THE FUCK IS WATERHOSE DOING

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+	{% block side_bar %}
+		 <li class="nav-header">twitter</li>
+	
+          <li><a href="/projects/nflodds"><img src="{{STATIC_URL}}icons/stats-up.png"><span class="label"> nfl odds</span></a></li>
+
+          <li><a href="/projects/ecology"><img src="{{STATIC_URL}}icons/earth.png"><span class="label"> ecology </span></a></li>
+
+           <li class="nav-header">machine learning</li>
+          <li><a href="/projects/genre"><img src="{{STATIC_URL}}icons/music.png"><span class="label"> genres </span></a></li>
+
+		 <li class="nav-header">ios</li>
+		 <li><a href="/projects/iOS"><img src="{{STATIC_URL}}icons/iphone.png"><span class="label"> college tours </span></a></li>
+
+ 	
+	{% endblock %}
+
+					
+	{% block content_area %}
+			<div class ="project_header">
+				<h2> Projects </h2>
+			</div>
+			<div class="drawing_content">
+				<p> Here are a couple projects I have worked on that I thought were fun. Some of the work involves parsing and analyzing data from Twitter. Other work includes examples of how machine learning can be used to categorize multi-dimensional data and my first go at an iOS application to help highschool students with the college application process. </p> 
+				<p> I am currently exploring event detection in sporting events using Twitter data and am excited to see where that leads </p>
+
+
+			</div>
+	{% endblock %}
+
+
+
+
+	
+	

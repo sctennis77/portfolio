@@ -1,0 +1,18 @@
+{% extends "projects.html" %}
+	{% block content_area %}
+			<div class ="project_header">
+				<h2> Tweeting the Odds </h2>
+			</div>
+			<div class="page_content">
+				<p> In my first endevor into sentiment analysis (Twitter was still relatively young), I collected tweets every minute for each team in the NFL for 10 weeks of the NFL season. Then each week the relative sentiment scores of each team -- calculated using several methods -- were matched up against eachother, mirroring the matchups of the games that week. 
+				</p>
+				<p> There was significant noise in the dataset -- specifically apparel and other team related advertisements and I made some effort to clean this up using a couple filters. Additionaly the system had to consider the disparencies in different markets. For example some teams such as the Dallas Cowboys recieved many more tweets than
+					a small market team.
+				</p>
+				<p> The system achieved an accuracy of 81% in using sentiment to predict the Las Vegas Odds. Not only could the algorithm successfuly predict the favorite, the sentiment score and line of the game were often correlated. This accuracy is a significant improvement from the baseline of 50% (guessing)
+				</p>
+				<a href="{{ STATIC_URL }}pdfs/clark_nfltwitter.pdf"> NFL ODDS </a>
+
+
+			</div>
+	{% endblock %}

@@ -1,0 +1,21 @@
+.bio_wrapper{
+	border-bottom:3px dashed #DFDFDF;
+	padding-bottom:5px;
+	color: #333;
+	font-size:24px;
+	text-shadow: -5px 5px 5px rgba(0,0,0, 0.3);
+	letter-spacing: 0;
+	padding:10px; }
+
+	
+
+.interest_wrapper {
+	padding:10px;
+	width:100%;
+	height:100%;
+}
+
+.info_list{
+	padding:20px;
+	line-height:1.5em;
+}

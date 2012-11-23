@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+	{% block side_bar %}
+	
+		 <li><a href="/home"><img src="{{STATIC_URL}}icons/user.png"><span class="label"> about</span></a></li>
+
+		 <li><a href="/home/research"><img src="{{STATIC_URL}}icons/book.png"><span class="label"> research interests</span></a></li>
+
+		  <li><a href="/home/coding"><img src="{{STATIC_URL}}icons/embed.png"><span class="label"> coding </span></a></li>
+
+		  <li><a href="/home/platforms"><img src="{{STATIC_URL}}icons/console.png"><span class="label"> platforms</span></a></li>
+
+ 
+
+	
+	{% endblock %}
+					
+	{% block content_area %}
+			<div class="bio_wrapper">
+			<div class="span6">
+				<ul class="info_list">
+					<li> Sam Clark </li>
+					<li> Swarthmore College '13 </li>
+					<li> Boston </li>
+					<li> Developer @ <a href="www.kanjoya.com">Kanjoya</a> </li>
+				</ul>
+			</div>
+					<img class="profileimg" src="{{STATIC_URL}}pictures/family.JPG" height="400" width="260">
+
+			</div>
+			<div class="interest_wrapper">
+				<!--I loved Mario, Super Smash, Warcraft, Diablo, Halo, DoTa , Counter Strike, Unreal Tournament, and more. -->
+				<ul class="interest_list">
+					<li class="nav-header"> family </li>
+					<li class="nav-header"> friends </li>
+					<li class="nav-header"> code </li>
+					<li class="nav-header"> sports </li>
+					<li class="nav-header"> music </li>
+					<li class="nav-header"> tech </li>
+					<li class="nav-header"> nature </li>
+				</ul>
+
+				
+
+			</div>
+	{% endblock %}

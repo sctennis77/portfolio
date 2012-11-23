@@ -1,0 +1,42 @@
+{% extends "drawings.html" %}
+{% block content_area %}
+	
+		<canvas class="drawing_canvas" width="1800" height="1200"></canvas>
+
+
+	</div>
+
+<script type="text/javascript">
+	var canvas = $('.drawing_canvas')[0];
+	if (canvas.getContext) {
+		var context = canvas.getContext('2d');
+
+
+	function draw_trees (){
+
+		var num = 0;
+		draw_tree(context,canvas.width*.2,canvas.height*.5,45,Math.PI,"sienna",.9,.7);
+		draw_tree(context,canvas.width*.4,canvas.height,50,Math.PI,"brown",.9,.85);
+		draw_tree(context,canvas.width*.8,canvas.height *.8,45,Math.PI,"darkblue",.9,.8);
+
+	;}
+
+	draw_trees();
+}
+	
+
+
+
+
+
+	
+
+
+	
+
+</script>
+{% endblock %}
+
+
+	
+	

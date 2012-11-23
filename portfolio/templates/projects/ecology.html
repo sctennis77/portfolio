@@ -1,0 +1,15 @@
+{% extends "projects.html" %}
+	{% block content_area %}
+			<div class ="project_header">
+				<h2> Ecology on Twitter </h2>
+			</div>
+			<div class="page_content">
+				<p> I took a seminar on religion and ecology my junior spring and had a pretty lose rope for what I could do with my final project. I decided to investigate the conversation surrounding ecology on Twitter and wrote a script that constantly streamed Tweets for any given list of keywords. </p>
+
+				<p> Over the course of ten days I collected just over 450,000 Tweets (2k an hour) on about 30 keywords. An analysis of sentiment by keyword was more insightful than one might think -- showing particularly that even on Twitter we react more intensly to immediate threats versus problems further in the distance. </p>
+
+				<a href="{{ STATIC_URL }}pdfs/clark_ecologytwitter.pdf"> Ecology on Twitter </a>
+
+
+			</div>
+	{% endblock %}
